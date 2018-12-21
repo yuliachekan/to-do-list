@@ -16,6 +16,12 @@ class AddItem extends Component {
         this.props.add(this.state);
         }
 
+        reset = () => {
+            this.setState({
+                title: '',
+                details: ''
+            });
+        }
 
     render(){
         const {title, details} = this.state;
